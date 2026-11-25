@@ -30,6 +30,8 @@ jobs:
       - name: Generate Clash subscription
         run: |
           python generator.py
+          python convert_to_v2ray.py
+          cp output/v2ray.txt docs/v2ray.txt
           mkdir -p docs
           cp output/clash.yaml docs/clash.yaml
           touch docs/.nojekyll
@@ -38,7 +40,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add output/clash.yaml docs/clash.yaml docs/.nojekyll
+          git add output/clash.yaml docs/clash.yaml docs/v2ray.txt output/v2ray.txt docs/.nojekyll
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else
@@ -50,6 +52,7 @@ jobs:
         run: |
           cmp --silent output/clash.yaml docs/clash.yaml
           test -s docs/clash.yaml
+          test -s docs/v2ray.txt
           python - <<'PY'
           from pathlib import Path
           import yaml
