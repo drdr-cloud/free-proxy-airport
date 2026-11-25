@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-11-24T21:27:28.294022+00:00'
+generated-at: '2026-11-25T03:27:56.428612+00:00'
 proxies:
 - name: 🇭🇰 香港 | HKG 2
   server: 47.86.90.31
@@ -97,13 +97,6 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇮🇹 意大利 | ITA 4
-  server: 202.50.253.27
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
 - name: 🇷🇺 俄罗斯 | RUS 2
   server: leviko-ru4448.shopingggg.ir
   port: 443
@@ -118,6 +111,13 @@ proxies:
   grpc-opts:
     grpc-mode: gun
     grpc-service-name: mobile.api.Event
+  udp: true
+- name: 🇮🇹 意大利 | ITA 4
+  server: 202.50.253.27
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇳🇱 荷兰 | NLD
   server: fc82dfx.nl8.h1clayd.click
@@ -136,20 +136,6 @@ proxies:
     host: fc82dfx.nl8.h1clayd.click
     mode: auto
   udp: true
-- name: 🇱🇹 立陶宛 | LTU
-  server: 84.32.209.54
-  port: 443
-  type: vless
-  uuid: f69e272f-e0e5-4e9d-b180-5be63930cde9
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-    short-id: 868419504747f6de
-  servername: lt.memepn.com
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
 - name: 🇷🇺 俄罗斯 | RUS 3
   server: ws3.falmero.store
   port: 443
@@ -163,6 +149,20 @@ proxies:
     path: /api/de1/stream
     headers:
       Host: paperbirch.merlano.monster
+  udp: true
+- name: 🇱🇹 立陶宛 | LTU
+  server: 84.32.209.54
+  port: 443
+  type: vless
+  uuid: f69e272f-e0e5-4e9d-b180-5be63930cde9
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+    short-id: 868419504747f6de
+  servername: lt.memepn.com
+  client-fingerprint: firefox
+  network: tcp
   udp: true
 - name: 🇷🇺 俄罗斯 | RUS 7
   server: bayleaf.elvano.website
@@ -388,16 +388,6 @@ proxies:
     grpc-mode: gun
     grpc-service-name: 204adda7e3da
   udp: true
-- name: 🇬🇧 英国 | GBR 3
-  server: 136.148.83.70
-  port: 443
-  type: vless
-  uuid: 00000000-0000-0001-0000-000000000000
-  tls: true
-  servername: aszbk-ru-78dc.my-fade.cloud
-  client-fingerprint: qq
-  network: tcp
-  udp: true
 - name: 🇻🇳 越南 | VNM
   server: hsaia.connainho.lol
   port: 46074
@@ -410,6 +400,30 @@ proxies:
     short-id: 367e3031
   servername: www.apple.com
   client-fingerprint: edge
+  network: tcp
+  udp: true
+- name: 🇬🇧 英国 | GBR 3
+  server: 136.148.83.70
+  port: 443
+  type: vless
+  uuid: 00000000-0000-0001-0000-000000000000
+  tls: true
+  servername: aszbk-ru-78dc.my-fade.cloud
+  client-fingerprint: qq
+  network: tcp
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 5
+  server: n1.sklserv.com
+  port: 443
+  type: vless
+  uuid: b7791707-83d9-444b-9d05-f5c99e90acd4
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: GqhAFTkRQ1HkNXyF2dUl3wUzJDHfgx3O9qocK01SLWU
+    short-id: 38e0c84b27d01e0d
+  servername: n1.sklserv.com
+  client-fingerprint: firefox
   network: tcp
   udp: true
 - name: 🇮🇹 意大利 | ITA 3
@@ -426,20 +440,6 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇳🇱 荷兰 | NLD 5
-  server: n1.sklserv.com
-  port: 443
-  type: vless
-  uuid: b7791707-83d9-444b-9d05-f5c99e90acd4
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: GqhAFTkRQ1HkNXyF2dUl3wUzJDHfgx3O9qocK01SLWU
-    short-id: 38e0c84b27d01e0d
-  servername: n1.sklserv.com
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
 proxy-groups:
 - name: AUTO-FAST
   type: url-test
@@ -452,11 +452,11 @@ proxy-groups:
   - 🇷🇺 俄罗斯 | RUS 4
   - 🇮🇹 意大利 | ITA 8
   - 🇮🇹 意大利 | ITA 2
-  - 🇮🇹 意大利 | ITA 4
   - 🇷🇺 俄罗斯 | RUS 2
+  - 🇮🇹 意大利 | ITA 4
   - 🇳🇱 荷兰 | NLD
-  - 🇱🇹 立陶宛 | LTU
   - 🇷🇺 俄罗斯 | RUS 3
+  - 🇱🇹 立陶宛 | LTU
   - 🇷🇺 俄罗斯 | RUS 7
   - 🇮🇹 意大利 | ITA 6
   - 🇷🇺 俄罗斯 | RUS
@@ -474,11 +474,11 @@ proxy-groups:
   - 🇩🇪 德国 | DEU 4
   - 🇬🇧 英国 | GBR 2
   - 🇳🇱 荷兰 | NLD 3
-  - 🇬🇧 英国 | GBR 3
   - 🇻🇳 越南 | VNM
+  - 🇬🇧 英国 | GBR 3
+  - 🇳🇱 荷兰 | NLD 5
   - 🇮🇹 意大利 | ITA 3
   - 🇮🇹 意大利 | ITA 7
-  - 🇳🇱 荷兰 | NLD 5
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: HK-POOL
@@ -507,13 +507,13 @@ proxy-groups:
 - name: AI-POOL
   type: url-test
   proxies:
+  - 🇭🇰 香港 | HKG 2
+  - 🇯🇵 日本 | JPN 2
+  - 🇸🇬 新加坡 | SGP
+  - 🇯🇵 日本 | JPN
+  - 🇷🇺 俄罗斯 | RUS 6
+  - 🇷🇺 俄罗斯 | RUS 4
   - 🇮🇹 意大利 | ITA 8
-  - 🇮🇹IT意大利丨yoyapai.com
-  - 🇮🇹 意大利 | ITA 7
-  - 🇮🇹 意大利 | ITA 9
-  - 🇮🇹 意大利 | ITA 4
-  - 🇮🇹 意大利 | ITA 6
-  - 🇮🇹 意大利 | ITA 2
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
